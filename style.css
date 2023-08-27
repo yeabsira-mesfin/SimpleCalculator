@@ -1,7 +1,7 @@
 *{
     font-family: 'Open Sans', sans-serif;
-    font-family: 'Tilt Prism', cursive;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body{
@@ -9,4 +9,44 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: green;
+}
+.container{
+    position: absolute;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 10px 20px 20px;
+    background: yellow;
+    box-shadow: 0 5px 10px black;
+}
+.display{
+    height: 80px;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #000000;
+    pointer-events: none;
+}
+.buttons {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.buttons button{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(201, 94, 94);
+}
+.buttons button:active{
+    transform: scale(1.09);
+}
+.operator{
+    color: white;
 }
